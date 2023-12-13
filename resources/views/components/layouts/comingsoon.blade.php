@@ -1,10 +1,11 @@
     <div class="min-h-screen p-8 text-white bg-gray-950">
         <div
-            class="container max-w-5xl mx-auto mt-6 md:mt-20 flex md:space-x-8 flex-col md:flex-row md:space-y-0 space-y-10">
+            class="container flex flex-col max-w-5xl mx-auto mt-6 space-y-10 md:mt-20 md:space-x-8 md:flex-row md:space-y-0">
             <div class="relative">
-                <div class="flex justify-center sm:justify-start relative">
-                    <img src="/assets/images/avatars/csaba.jpg" alt="csaba" class="w-16 mb-12 rounded-full" />
-                    <x-ui.logo class="w-6 absolute rounded-full bottom-11 left-12 border border-gray-500"></x-ui.logo>
+                <div class="relative flex items-center justify-center mb-12 space-x-5 sm:justify-start">
+                    <img src="/assets/images/avatars/csaba.jpg" alt="csaba" class="w-16 rounded-full" />
+                    <div class="text-5xl font-extrabold">+</div>
+                    <x-ui.logo class="w-16 border border-gray-500 rounded-full bottom-11 left-12"></x-ui.logo>
                 </div>
                 <h1
                     class="text-3xl sm:text-[56px] font-extrabold mb-12 leading-tight tracking-tight text-center sm:text-left">
@@ -40,7 +41,7 @@
                     </button>
                 </form>
                 <svg width="102" height="83" viewBox="0 0 102 83" fill="none"
-                    class="-rotate-90 absolute right-20 bottom-16 hidden  lg:block" xmlns="http://www.w3.org/2000/svg">
+                    class="absolute hidden -rotate-90 right-20 bottom-16 lg:block" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M69.2677 63.1357C64.9652 67.9256 59.9055 71.9862 54.2878 75.1574C53.2517 75.7033 52.2406 76.2988 51.2295 76.8695C50.1996 77.4402 49.1367 77.9497 48.0463 78.3955C44.2346 79.8193 40.2858 80.8503 36.2621 81.4722C32.3158 82.1238 28.3137 82.3814 24.3158 82.2414C20.7958 82.1714 17.2845 81.8689 13.8049 81.3358C11.5724 81.0232 9.37413 80.504 7.23878 79.785C5.12491 78.9923 3.11012 77.9599 1.23437 76.7082C0.0734369 75.9266 0.497865 75.5668 1.83356 75.3807C2.69027 75.2679 3.55339 75.2099 4.41758 75.207C5.53766 75.084 6.66796 75.084 7.78804 75.207C8.32481 75.207 8.84911 75.2815 9.36092 75.3559C9.87273 75.4303 10.3721 75.5668 10.8963 75.6288C11.9324 75.7405 12.9436 75.9018 13.9797 76.001C15.0158 76.1003 16.0394 76.1623 17.0755 76.2119C18.1116 76.2616 19.1477 76.2864 20.1838 76.2119C22.256 76.2119 24.3282 76.1251 26.4254 75.9762C28.5226 75.8274 30.6073 75.8149 32.667 75.6164C35.2179 75.3608 37.7309 74.8155 40.1569 73.9912C42.5663 73.1469 44.9181 72.1482 47.1974 71.0013C52.2347 68.4382 56.801 65.0493 60.7042 60.977C61.919 59.7163 63.0689 58.3954 64.1496 57.0193C64.6863 56.3246 65.2606 55.6546 65.7599 54.9351L67.2703 52.8012C70.203 48.3529 72.4066 43.4702 73.799 38.3354C74.7113 34.4002 75.085 30.3606 74.91 26.326C74.9849 25.4576 74.7977 24.6016 74.8227 23.7207C74.8476 22.8399 74.8976 22.232 74.9475 21.6737C75.0299 21.1652 75.1988 20.6743 75.4468 20.2221C75.8483 19.4739 76.4598 18.8576 77.207 18.448C77.5374 18.2243 77.8791 18.0172 78.2306 17.8277C78.7923 17.5796 79.3416 17.8277 79.9533 18.3736C80.775 19.2221 81.431 20.2149 81.8881 21.3015C82.1628 22.3064 82.35 23.3237 82.5747 24.3658L82.8743 25.9414L83.0366 27.5295C83.1615 28.5958 83.2116 29.6695 83.1864 30.7427C83.1864 31.8096 83.074 32.889 82.9867 33.9808C82.8993 35.0725 82.6995 36.1271 82.5498 37.2188C82.3751 38.2884 82.146 39.3484 81.8632 40.3948C81.6135 41.4618 81.2515 42.5039 80.9394 43.5585C80.6273 44.613 80.1405 45.6055 79.6911 46.6352C77.173 52.6754 73.7098 58.282 69.4299 63.2473L69.2677 63.1357Z"
                         fill="#7ad2fa" />
@@ -71,13 +72,13 @@
                 </div>
             </div>
             <div class="flex flex-col space-y-4">
-                <figure class="rounded-2xl p-6 shadow-lg ring-1 ring-gray-900/5 bg-gray-800 border-gray-700 sm:mt-0">
+                <figure class="p-6 bg-gray-800 border-gray-700 shadow-lg rounded-2xl ring-1 ring-gray-900/5 sm:mt-0">
                     <blockquote class="text-gray-50">
                         <p>“With more than 25 years of coding experience and more than 200 side
                             projects you can trust Csaba.”</p>
                     </blockquote>
-                    <figcaption class="mt-6 flex items-center gap-x-4">
-                        <img class="h-10 w-10 rounded-full bg-gray-50 ring-white ring-1"
+                    <figcaption class="flex items-center mt-6 gap-x-4">
+                        <img class="w-10 h-10 rounded-full bg-gray-50 ring-white ring-1"
                             src="/assets/images/avatars/pratham.jpg" alt="">
                         <div>
                             <div class="font-semibold text-gray-100">Pratham Kumar</div>
@@ -85,12 +86,12 @@
                         </div>
                     </figcaption>
                 </figure>
-                <figure class="rounded-2xl p-6 shadow-lg ring-1 ring-gray-900/5 bg-gray-800 border-gray-700">
+                <figure class="p-6 bg-gray-800 border-gray-700 shadow-lg rounded-2xl ring-1 ring-gray-900/5">
                     <blockquote class="text-gray-50">
                         <p>“With this site, you'll feel much more confident in your developer role.”</p>
                     </blockquote>
-                    <figcaption class="mt-6 flex items-center gap-x-4">
-                        <img class="h-10 w-10 rounded-full bg-gray-50 ring-white ring-1"
+                    <figcaption class="flex items-center mt-6 gap-x-4">
+                        <img class="w-10 h-10 rounded-full bg-gray-50 ring-white ring-1"
                             src="/assets/images/avatars/marko.jpg" alt="">
                         <div>
                             <div class="font-semibold text-gray-100">Marko Denic </div>
@@ -98,13 +99,13 @@
                         </div>
                     </figcaption>
                 </figure>
-                <figure class="rounded-2xl p-6 shadow-lg ring-1 ring-gray-900/5 bg-gray-800 border-gray-700">
+                <figure class="p-6 bg-gray-800 border-gray-700 shadow-lg rounded-2xl ring-1 ring-gray-900/5">
                     <blockquote class="text-gray-50">
                         <p>“A must try for everyone. It seamlessly combines invaluable resources, making it a perfect
                             asset for the frontend development community.”</p>
                     </blockquote>
-                    <figcaption class="mt-6 flex items-center gap-x-4">
-                        <img class="h-10 w-10 rounded-full bg-gray-50 ring-white ring-1"
+                    <figcaption class="flex items-center mt-6 gap-x-4">
+                        <img class="w-10 h-10 rounded-full bg-gray-50 ring-white ring-1"
                             src="/assets/images/avatars/shefali.jpg" alt="">
                         <div>
                             <div class="font-semibold text-gray-100">Shefali</div>

@@ -24,3 +24,14 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+
+
+Route::middleware(['auth', 'update.streak'])->group(function () {
+});
+
+Route::middleware(['update.streak'])->group(function () {
+    Route::get('/daily-activity', function () {
+        // Logic for the daily activity goes here
+        return response()->json(['message' => 'Daily activity recorded.']);
+    })->name('daily-activity');
+});

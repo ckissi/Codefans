@@ -187,4 +187,11 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    'coming_soon' => env('COMING_SOON', true),
+
+    'lessons_in_development' => env('LESSONS_IN_DEVELOPMENT', true),
+
+    'google_login' => env('GOOGLE_LOGIN', true),
+
+    'github_login' => env('GITHUB_LOGIN', true),
 ];

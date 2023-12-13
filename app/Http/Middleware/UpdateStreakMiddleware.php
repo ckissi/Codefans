@@ -6,6 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
+use App\Notifications\StreakMilestoneNotification;
 
 class UpdateStreakMiddleware
 {
@@ -25,6 +26,11 @@ class UpdateStreakMiddleware
             // If last activity was yesterday, increment streak
             if ($lastActivity && $lastActivity->diffInDays($today) == 1) {
                 $user->streak_count++;
+
+                // Notify user at streak milestones
+                if (in_array($user->streak_count, [10, 20, 30, 40, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000])) {
+                    $user->notify(new StreakMilestoneNotification($user->streak_count));
+                }
             } elseif (!$lastActivity || $lastActivity->diffInDays($today) > 1) {
                 // If it's been more than a day since last activity, reset streak
                 $user->streak_count = 1;

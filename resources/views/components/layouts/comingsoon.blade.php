@@ -4,7 +4,9 @@
             <div class="relative">
                 <div class="relative flex items-center justify-center mb-12 space-x-5 sm:justify-start">
                     <img src="/assets/images/avatars/csaba.jpg" alt="csaba" class="w-16 rounded-full" />
-                    <div class="text-5xl font-extrabold">+</div>
+                    <div class="text-4xl font-extrabold">+</div>
+                    <div class="text-4xl">Building</div>
+                    <div class="text-4xl font-extrabold">=</div>
                     <x-ui.logo class="w-16 border border-gray-500 rounded-full bottom-11 left-12"></x-ui.logo>
                 </div>
                 <h1
@@ -26,7 +28,7 @@
                         class="inline-block border rounded-full w-7" />
                 </p> --}}
                 <p class="mb-8 text-xl font-light text-center sm:text-left">
-                    P.S. You can expect courses, quizzes, challenges, community help and more...
+                    P.S. 🚧 Bulding... You can expect courses, quizzes, challenges, community help and more...
                 </p>
                 <form action="https://mailer.elerion.com/lists/654504b8a5bfb/embedded-form-subscribe-captcha"
                     method="POST"

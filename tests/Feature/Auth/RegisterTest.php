@@ -5,6 +5,7 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Livewire\Volt\Volt;
+use Illuminate\Support\Str;
 
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 

@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png">
+    @if (App::environment('production'))
+        <script async defer data-domain="codefans.io" src="https://analytics.elerion.com/js/plausible.js"></script>
+    @endif
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script>
         if (typeof(Storage) !== "undefined") {

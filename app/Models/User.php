@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Str;
+use App\Notifications\VerifyEmailQueued;
+use Illuminate\Auth\Notifications\ResetPassword as ResetPasswordNotification;
+
 
 class User extends Authenticatable
 {
@@ -22,7 +26,14 @@ class User extends Authenticatable
         'email',
         'password',
         'streak_count',
-        'last_streak_date'
+        'last_streak_date',
+        'provider_id',
+        'provider',
+        'token',
+        'token_secret',
+        'avatar',
+        'email_verified_at',
+        'uuid',
     ];
 
     /**
@@ -45,4 +56,51 @@ class User extends Authenticatable
         'password' => 'hashed',
         'last_streak_date' => 'datetime',
     ];
+
+    public static function boot()
+    {
+        parent::boot();
+        self::creating(function ($model) {
+            $model->uuid = Str::uuid()->toString();
+        });
+    }
+
+    /**
+     * Generate a unique nickname for the user.
+     *
+     * @param string $name
+     * @param string $surname
+     * @return string
+     */
+    public static function generateUniqueNickname($name)
+    {
+        $baseNickname = Str::lower(preg_replace('/\s+/', '', $name));
+        $nickname = $baseNickname;
+        $counter = 1;
+
+        // Check if the nickname exists
+        while (UserDetail::where('nickname', $nickname)->exists()) {
+            $nickname = $baseNickname . $counter;
+            $counter++;
+        }
+
+        return $nickname;
+    }
+
+    public function sendEmailVerificationNotification()
+    {
+        $this->notify(new VerifyEmailQueued);
+    }
+
+
+    /**
+     * Send the password reset notification.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new \App\Notifications\ResetPasswordQueued($token));
+    }
 }

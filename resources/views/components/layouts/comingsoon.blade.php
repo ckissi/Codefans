@@ -2,13 +2,14 @@
         <div
             class="container flex flex-col max-w-5xl mx-auto mt-6 space-y-10 md:mt-20 md:space-x-8 md:flex-row md:space-y-0">
             <div class="relative">
-                <div class="relative flex items-center justify-center mb-12 space-x-5 sm:justify-start">
-                    <img src="/assets/images/avatars/csaba.jpg" alt="csaba" class="w-16 rounded-full" />
-                    <div class="text-4xl font-extrabold">+</div>
-                    <div class="text-4xl">Building</div>
-                    <div class="text-4xl font-extrabold">=</div>
-                    <x-ui.logo class="w-16 border border-gray-500 rounded-full bottom-11 left-12"></x-ui.logo>
-                    <div class="text-4xl">CodeFans</div>
+                <div
+                    class="relative flex items-center justify-center mb-12 space-x-2 text-2xl sm:space-x-5 sm:justify-start sm:text-4xl">
+                    <img src="/assets/images/avatars/csaba.jpg" alt="csaba" class="w-10 rounded-full sm:w-16" />
+                    <div class="font-extrabold">+</div>
+                    <div class="">Building</div>
+                    <div class="font-extrabold">=</div>
+                    <x-ui.logo class="w-10 border border-gray-500 rounded-full sm:w-16 bottom-11 left-12"></x-ui.logo>
+                    <div class="">CodeFans</div>
                 </div>
                 <h1
                     class="text-3xl sm:text-[56px] font-extrabold mb-12 leading-tight tracking-tight text-center sm:text-left">

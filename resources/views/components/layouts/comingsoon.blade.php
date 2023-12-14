@@ -30,7 +30,7 @@
                         class="inline-block border rounded-full w-7" />
                 </p> --}}
                 <p class="mb-8 text-xl font-light text-center sm:text-left">
-                    P.S. 🚧 Work in progress! You can expect courses, quizzes, challenges, community help and
+                    P.S. 🚧 Work in progress! You can expect courses, quizzes, challenges, mentoring, community help and
                     more...
                 </p>
                 <form action="https://mailer.elerion.com/lists/654504b8a5bfb/embedded-form-subscribe-captcha"

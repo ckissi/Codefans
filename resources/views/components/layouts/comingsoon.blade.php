@@ -15,7 +15,7 @@
                     class="text-3xl sm:text-[56px] font-extrabold mb-12 leading-tight tracking-tight text-center sm:text-left">
                     Join
                     <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-300 gradient-to">300+</span>
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-300 gradient-to">1000+</span>
                     people who want to learn or improve their
                     <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-300 gradient-to">front-end
@@ -64,13 +64,13 @@
                         <img class="relative z-20 inline-block rounded-full h-9 w-9 ring-2 ring-white"
                             src="/assets/images/avatars/a3.jpg" alt="" />
                         <img class="relative z-30 inline-block rounded-full h-9 w-9 ring-2 ring-white"
-                            src="/assets/images/avatars/a4.jpg" alt="" />
+                            src="/assets/images/avatars/viki.jpg" alt="" />
                         <img class="relative z-40 inline-block rounded-full h-9 w-9 ring-2 ring-white"
-                            src="/assets/images/avatars/a5.jpg" alt="" />
+                            src="/assets/images/avatars/ritikaa.jpg" alt="" />
                         <img class="relative z-50 inline-block rounded-full h-9 w-9 ring-2 ring-white"
-                            src="/assets/images/avatars/a6.jpg" alt="" />
+                            src="/assets/images/avatars/ritikak.jpg" alt="" />
                         <img class="relative inline-block rounded-full h-9 w-9 ring-2 ring-white"
-                            src="/assets/images/avatars/a7.jpg" alt="" style="z-index: 60" />
+                            src="/assets/images/avatars/shefali.jpg" alt="" style="z-index: 60" />
                     </div>
                     <p class="mt-1 text-sm text-center text-gray-200 sm:text-left">
                         Join hundreds of others who want to learn or improve their front-end skills.
